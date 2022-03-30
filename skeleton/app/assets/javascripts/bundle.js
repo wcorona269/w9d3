@@ -17,7 +17,7 @@ class FollowToggle {
     this.handleClick = this.handleClick.bind(this);
     this.el.on("click", this.handleClick);
   }
-  
+
   render() {
     if (this.followState === "false") {
       this.el.text("follow");
@@ -25,7 +25,7 @@ class FollowToggle {
     else{
       this.el.text("unfollow");
     }
-    this.el.propr("disabled", false);
+    this.el.prop("disabled", false);
   }
 }
 
