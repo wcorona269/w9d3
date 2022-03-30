@@ -1,14 +1,9 @@
 const FollowToggle = require("./follow_toggle");
 
-console.log("sdlkfj");
-const buttons = $('.follow-toggle');
-
-const toggle = function(toggleCallback) {
-  buttons.each(toggleCallback(index, button));
-  new FollowToggle(button);
-};
-const func = () => {
-  debugger;
+const setEventListeners = () => {
+  $('.follow-toggle').each(function(i, el) {
+    new FollowToggle(el);
+  });
 };
 
-func();
+$(setEventListeners);
